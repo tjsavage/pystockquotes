@@ -8,3 +8,9 @@ class DataSourceAbstract(object):
 
 	def get_all(self, symbol):
 		raise NotImplementedError("Datasource hasn't implemented get_all.")
+
+	def opening_price(self, symbol, date):
+		raise NotImplementedError("Datasource hasn't implemented opening_price.")
+
+	def closing_price(self, symbol, date):
+		raise NotImplementedError("Datasource hasn't implemented closing_price.")
